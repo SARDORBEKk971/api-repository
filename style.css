@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #f0f2f0, #7d7e85);
+}
+
+.section {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 70%;
+    height: 10em;
+    margin: 0;
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 2.2em;
+    color: maroon;
+    font-weight: 400;
+    position: relative;
+    /* top: -1em; */
+}
+
+.logo p {
+    font-size: 0.9em;
+    color: peru;
+    padding-top: 0.7em;
+}
+
+.btn_btn {
+    padding: 1.5em 1.2em;
+    border: none;
+    background-color: sienna;
+    border-radius: 0 1em 1em 0;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.btn_btn:hover {
+    background-color: lightsalmon;
+}
+
+.search-btn {
+    width: 70%;
+    height: 5em;
+    margin: 0;
+}
+
+.search-butn {
+    width: 100%;
+    padding: 1.3em;
+    border-radius: 0.6em 0 0 0.6em;
+    outline: none;
+    border: 0.125em solid brown;
+}
+
+.btn::placeholder {
+    color: blueviolet;
+}
+
+.result {
+    text-align: center;
+    padding-top: 0.9em;
+}
+.result h1 {
+    color: maroon;
+    font-weight: 300;
+}
+
+/* Images  */
+
+.image-sections {
+    height: 20%;
+    margin: auto;
+    position: relative;
+}
+.img-container {
+    width: 90%;
+    height: 100%;
+    
+}
+
+.imgs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.img-content {
+    padding: 0 1.4em 1.4em;
+    text-align: center;
+}
+
+.images {
+    width: 300px;
+    height: 250px;
+}
+
+
+/* footer */
+
+footer {
+    position: absolute;
+    top: 45vh;
+}
+
+@media screen and (min-width: 300px) {
+    .container {
+        width: 100%;
+    }
+    .btnn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+    .search-butn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.3em;
+        border-radius: 0.6em 0 0 0.6em;
+        outline: none;
+        border: 0.125em solid brown;
+    }
+}
+
